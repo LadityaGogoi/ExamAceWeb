@@ -5,7 +5,7 @@ import images from '../../constants/images';
 
 const Login = () => {
     const navigate = useNavigate();
-    const { route } = useParams();  // Extracts route from params
+    const { route } = useParams();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -18,7 +18,7 @@ const Login = () => {
 
         mixpanel.track("Login Event", { email, password });
         setError('');
-        navigate(`/${route || "dashboard"}`);  // Navigate to route param or default to /dashboard
+        navigate(`/${route || "dashboard"}`);
     };
 
     return (

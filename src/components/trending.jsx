@@ -22,7 +22,7 @@ const Trending = () => {
   return (
     <div className="my-10">
       <div className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent text-xl font-extrabold m-3">
-        Trending Topics | JEE
+        Trending Topics | JEE Mains
       </div>
       <div className="w-full flex flex-row flex-wrap justify-between items-center gap-3">
         {
